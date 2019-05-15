@@ -22,21 +22,18 @@ function searchCity() {
   let city = $('#city_search').val();
   console.log(city);
 
-
   // TODO: add AJAX call to weather API and display info
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=${config.getKey()}`;
+  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${config.getKey()}&units=imperial`;
 
-$.get(url, function(res) {
-  console.log(res);
+  $.get(url, function(res) {
+    console.log(res);
 
-  $('#city_name').text(res.name);
-  $('#high').text(`${res.main.temp_max}`);
-  $('#low').text(res.main.temp_min);
-  $('#forecast').text(res.main.temp_max);
-  $('#high').text(res.main.temp_max);
-
-});
-
+    $('#city_name').text(`${res.name}, ${res.sys.country}`);
+    $('#high').html(`${res.main.temp_max.toFixed(0)}&#x2109;`);
+    $('#low').html(`${res.main.temp_min.toFixed(0)}&#x2109;`);
+    $('#forecast').text(`${res.weather[0].main}`);
+    $('#humidity').text(`${res.main.humidity}%`);
+  });
 
   $('#weather-info').css('display', 'block');
 }
