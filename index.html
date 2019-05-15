@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS - Lesson 03</title>
+
+    <!-- attach bootstrap 4 css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- attach own css -->
+    <link rel="stylesheet" href="./static/css/main.css">
+  </head>
+  <body>
+    <div id="nav"></div>
+
+    <!-- create form to search city -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <form method="post" class="form-inline" action="" id="search_weather">
+            <input type="text" id="city_search" class="form-control" name="city" placeholder="city...">
+            <input type="submit" id="submit-btn" class="btn btn-primary" name="submit" value="Search">
+          </form>
+        </div> <!-- ends col 4 -->
+      </div> <!-- ends row -->
+    </div> <!-- ends container -->
+
+    <!-- cards for information to be rendered -->
+    <div class="container" id="weather-info">
+      <h2 id="city_name">Weather Info</h2>
+
+      <!-- create the first card which renders high temp -->
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card">
+            <div class="card-title badge-danger">High</div>
+            <div class="card-text" id="high">45&deg;</div>
+          </div> <!-- ends card -->
+        </div> <!-- ends col 4 -->
+      </div> <!-- ends row for card 1 -->
+
+      <!-- create the second card which renders low temp -->
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card">
+            <div class="card-title badge-primary">Low</div>
+            <div class="card-text" id="low">45&deg;</div>
+          </div> <!-- ends card -->
+        </div> <!-- ends col 4 -->
+      </div> <!-- ends row for card 2 -->
+
+      <!-- create the third card which renders forecast -->
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card">
+            <div class="card-title badge-info">Forecast</div>
+            <div class="card-text" id="forecast">Cloudy</div>
+          </div> <!-- ends card -->
+        </div> <!-- ends col 4 -->
+      </div> <!-- ends row for card 3 -->
+
+      <!-- create the fourth card which renders humidity -->
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card">
+            <div class="card-title badge-success">Humidity</div>
+            <div class="card-text" id="humidity">14%</div>
+          </div> <!-- ends card -->
+        </div> <!-- ends col 4 -->
+      </div> <!-- ends row for card 4 -->
+
+    </div> <!-- ends container -->
+
+
+
+    <!-- jquery cdn -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <!-- attach bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- attach own js -->
+    <script type="module" src="./static/js/app.js"></script>
+  </body>
+</html>
