@@ -30,7 +30,7 @@ $.get(url, function(res) {
   console.log(res);
 
   $('#city_name').text(res.name);
-  $('#high').text(`${res.main.temp_max}&deg`);
+  $('#high').text(`${res.main.temp_max}`);
   $('#low').text(res.main.temp_min);
   $('#forecast').text(res.main.temp_max);
   $('#high').text(res.main.temp_max);
