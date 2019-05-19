@@ -2,6 +2,10 @@
   margin-top: 100px;
 }
 
+.table-container {
+  margin: 50px;
+}
+
 input {
   width: 100%;
   margin-top: 20px;
@@ -25,3 +29,11 @@ h2 {
   font-size: 22px;
   padding: 25px;
 }
+
+/* #likes {
+  color: green;
+}
+
+#dislikes {
+  color: red;
+} */

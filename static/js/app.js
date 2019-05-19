@@ -48,3 +48,30 @@ $('#submit-btn').click(function(e) {
 
 // make search information not appear until they submit a city
 $('#weather-info').css('display', 'none');
+
+
+
+//////////////////// alter aniniamls page
+
+
+// // start the unordered list
+// let rownum $('#rownum')
+//
+// // insert list items to be shown
+// for (let i in rownum) {
+//   console.log();
+//   // html+= `<li>${name} is ${age} years old</li>`;
+// }
+//
+// create a function that updates table
+// function updateTable() {
+//   let rown = $('#rownum').val();
+//   console.log(rown);
+//
+//     $('#city_name').text(`${res.name}, ${res.sys.country}`);
+//     $('#high').html(`${res.main.temp_max.toFixed(0)}&#x2109;`);
+//
+//   });
+//
+//   $('#weather-info').css('display', 'block');
+// }
