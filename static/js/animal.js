@@ -1,57 +1,17 @@
-// let keys = Object.keys(person.team);
-//
-// for (let i in keys) {
-//   let sport = keys[i];
-//   let value = person['team'][sport];
-//
-//   if (Array.isArray(value)) {
-//     for (let i in value) {
-//       console.log(`${sport}: ${value[i]}`);
-//     }
-//   } else {
-//     console.log(`${sport}: ${value}`);
-//   }
-// };
 
-//////////////////// alter aniniamls page
-
-
-// start the unordered list
-// let rownum $('#rownum');
-
-// // insert list items to be shown
-// for (let i in rownum) {
-//   console.log();
-//   // html+= `<li>${name} is ${age} years old</li>`;
-// }
-
-// create a function that updates table
-// function updateTable() {
-//   let rown = $('#rownum').val();
-//   console.log(rown);
-//
-//     $('#city_name').text(`${res.name}, ${res.sys.country}`);
-//     $('#high').html(`${res.main.temp_max.toFixed(0)}&#x2109;`);
-//
-//   });
-//
-//   $('#weather-info').css('display', 'block');
-// }
-
-// // solution
 function showAnimals(res) {
   console.log(res);
 
   let headers = Object.keys(res[0]);
 
-  // console.log(headers);
+  console.log(headers);
 
   // create a header html string
   let header_html = '<thead><tr><th>#</th>';
 
   for (let i in headers) {
     let column_name = headers[i];
-    // console.log(column_name);
+    console.log(column_name);
     header_html += `<th>${column_name}</th>`;
   }
 
